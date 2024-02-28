@@ -82,7 +82,7 @@ h3{
 .colorSchemaDiv{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .colorSchemaDiv{
@@ -98,42 +98,47 @@ h3{
     margin: 2px;
 }
 
+.colorSchemaDiv h2{
+    grid-column: 1/6;
+    grid-row: 1/2;
+}
+
 .primaryColor {
     grid-column: 1/2;
-    grid-row: 1/2;
+    grid-row: 2/3;
 }
 
 .secondaryColor {
     grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: 2/3;
 }
 
 .accent1{
     grid-column: 3/4;
-    grid-row: 1/2;
+    grid-row: 2/3;
 }
 
 .accent2{
     grid-column: 4/5;
-    grid-row: 1/2;
+    grid-row: 2/3;
 }
 
 .accent3{
     grid-column: 5/6;
-    grid-row: 1/2;
+    grid-row: 2/3;
 }
 
 .almostBlackColor{
     background-color: var(--almostBlack);
     color: var(--llGren);
     grid-column: 1/2;
-    grid-row: 2/4;
+    grid-row: 3/5;
 }
 
 .darkBlue{
     background-color: var(--darkBlue);
     grid-column: 2/3;
-    grid-row: 2/4;
+    grid-row: 3/5;
 }
 
 
@@ -141,19 +146,19 @@ h3{
 .green{
     background-color: var(--green);
     grid-column: 3/4;
-    grid-row: 2/4;
+    grid-row: 3/5;
 }
 
 .lightGreen{
     background-color:var(--lightGreen);
     grid-column: 4/5;
-    grid-row: 2/4;
+    grid-row: 3/5;
 }
 
 .llGren{
     background-color: var(--llGren) ;
     grid-column: 5/6;
-    grid-row: 2/4;
+    grid-row: 3/5;
 }
 
 .typografy{
