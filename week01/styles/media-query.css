@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body{
+    font-family: Roboto;
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #e0e0f0; 
+    border-radius: 1rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:1rem;
+}
+
+section{
+    background-color: white;
+    padding: 1rem;
+}
+
+footer{
+    margin-top: 3rem;
+    height: min-content;
+
+}
+
+
+
