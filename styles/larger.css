@@ -27,7 +27,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 1.5rem;
-        width:auto
+        width:auto;
+        margin: 0 1.5rem;
     }
 
     .learningCard{
@@ -88,7 +89,7 @@
         display: flex;
     }
 
-    .yearNameFlag p:contains("Daniel Faria"){
+    .nome{
         margin-right: 1rem;
     }
 
