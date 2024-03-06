@@ -280,7 +280,7 @@ iframe {
     flex-direction: column-reverse;
 }
 
-.pageInformation h4 {
+.pageInformation h3 {
     padding: 0px;
     margin: 0;
 
@@ -292,12 +292,12 @@ iframe {
 
 }
 
-.pageInformation h4:first-child {
+.pageInformation h3:first-child {
     display: flex;
     align-items: center;
 }
 
-.pageInformation h4:last-child {
+.pageInformation h3:last-child {
     margin: 1rem;
     margin-right: 0.5rem;
 

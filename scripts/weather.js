@@ -25,7 +25,7 @@ function displayResults(data) {
     creatingDivWeather.classList.add('divWeather')
     cardPageInformation.appendChild(creatingDivWeather)
 
-    const pWeatherInformation = document.createElement('h4')
+    const pWeatherInformation = document.createElement('h3')
     pWeatherInformation.classList.add('textInformationWeather')
 
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
