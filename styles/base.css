@@ -38,8 +38,7 @@ header {
 }
 
 header img {
-    width: 112px;
-    margin-right: 2rem;
+    margin-right: 0rem;
 }
 
 nav {
@@ -85,7 +84,7 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 0 5rem 0 5rem;
+    padding: 0 3rem;
 
 }
 
@@ -145,6 +144,7 @@ h1 {
 
 .card li {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .card li a {
@@ -295,6 +295,7 @@ iframe {
 .pageInformation h3:first-child {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .pageInformation h3:last-child {
