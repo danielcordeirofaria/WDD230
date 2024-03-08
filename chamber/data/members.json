@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "Volvo do Brasil Veículos Ltda",
+            "address": "Avenida Juscelino K de Oliveira, 2600 - CIC, Curitiba/PR",
+            "phoneNumber": "+55 (41) 3317-8196",
+            "webSite": "www.volvo.com",
+            "image": "images/companies/volvoSmall.webp",
+            "membershipLevel": "GOLD",
+            "email": "volvodobrazil@volvo.com"
+        },
+        {
+            "name": "Novo Oriente Participações Ltda",
+            "address": "Rua Joao Kalinowski, 170 - CIC, Curitiba/PR",
+            "phoneNumber": "+55 (41) 3153-8494",
+            "webSite": "www.http://expressooriente.com.br/",
+            "image": "images/companies/novoorienteSmall.webp",
+            "membershipLevel": "GOLD",
+            "email": "novooriente@novooriente.com.br"
+        },
+        {
+            "name": "Peroxidos do Brasil Ltda",
+            "address": "Rua Joao Lunardelli, 1301 - CIC, Curitiba/PR",
+            "phoneNumber": "+55 (41) 3316-5200",
+            "webSite": "www.peroxidos.com.br/",
+            "image": "images/companies/PEROXIDOSSmall.webp",
+            "membershipLevel": "GOLD",
+            "email": "peroxidos@peroxidos.com.br"
+        },
+        {
+            "name": "Instituto de Tecnologia do Parana",
+            "address": "Rua Professor Algacyr Munhoz Mader, 3775 - CIC, Curitiba/PR",
+            "phoneNumber": "+55 (41) 3643-2133",
+            "webSite": "www.tecpar.br/",
+            "image": "images/companies/tecparSmall.webp",
+            "membershipLevel": "GOLD",
+            "email": "tecpar@tecpar.com.br"
+        },
+        {
+            "name": "CBB Indústria e Comércio de Asfaltos e Engenharia Ltda",
+            "address": "Rua Joao Bettega, 3500 - CIC, Curitiba/PR",
+            "phoneNumber": "+55 (41) 3091-2200",
+            "webSite": "www.cbbasfaltos.com.br",
+            "image": "images/companies/cbbSmall.webp",
+            "membershipLevel": "GOLD",
+            "email": "tecpar@tecpar.com.br"
+        },
+        {
+            "name": "Compasa do Brasil Distribuidora de Asfaltos Ltda",
+            "address": "Rua Dr. Mario Jorge, 191 - CIC, Curitiba/PR",
+            "phoneNumber": "+55 (41) 3288-1206",
+            "webSite": "www.compasadobrasil.com.br",
+            "image": "images/companies/copasaSmall.webp",
+            "membershipLevel": "GOLD",
+            "email": "copasa@copasa.com.br"
+        },
+        {
+            "name": "Cargolift Logística S/A",
+            "address": "Rua Arthur Martins Franco, 880 - CIC, Curitiba/PR",
+            "phoneNumber": "+ 55 (41) 2106-0700",
+            "webSite": "www.cargolift.com.br",
+            "image": "images/companies/cargoliftSmall.webp",
+            "membershipLevel": "GOLD",
+            "email": "cargolift@cargolift.com.br"
+        }
+    ]
+}

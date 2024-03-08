@@ -1,0 +1,92 @@
+@media screen and (min-width: 440px) {
+  body {
+    font-family: var(--text-font);
+    font-size: large;
+    margin: 0 4rem;
+  }
+
+  .ulFromNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+  }
+
+  #menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--lightGreen);
+    color: #000;
+  }
+
+  .navigation {
+    list-style: none;
+    margin: 1rem 4rem;
+    justify-content: space-around;
+  }
+
+  .navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+  }
+
+  /* 
+    .navigation li:hover{
+        font-size: 1.25rem;
+        transition: 100ms;
+        font-weight: bold;
+        background-color: var(--green);
+        color: white;
+    
+    } */
+
+  .navigation a {
+    display: flex;
+    text-align: left;
+    text-decoration: none;
+    align-items: center;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+  }
+
+  .show li {
+    display: flex;
+    justify-content: center;
+  }
+
+  #menu.show::before {
+    content: "X";
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .allMainContent picture img {
+    margin-bottom: 1.5rem;
+    border-radius: 2rem;
+  }
+
+  .allMainContent picture img:hover {
+    box-shadow: 0 0 50px #333;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imagesFromICC {
+    grid-column: 2/4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
