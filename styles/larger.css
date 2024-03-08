@@ -20,7 +20,7 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        width: 90%;
+        padding-bottom: 2rem
     }
 
     .card{
@@ -88,11 +88,12 @@
     }
     
     .show li {
-        display: block;
+        display: flex;
     }
 
     footer{
         display: flex;
+        margin-top: 0;
     }
 
     .yearNameFlag{

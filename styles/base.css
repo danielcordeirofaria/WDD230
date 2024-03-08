@@ -13,8 +13,17 @@ html {
 
 body {
     font-family: var(--text-font);
-    width: 1200px;
+    /* width: 1200px; */
     margin: 0;
+}
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
 }
 
 .name {
@@ -117,6 +126,7 @@ h1 {
     border-radius: 1rem;
     width: -webkit-fill-available;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: #8e1c042b;
 }
 
 .card h2 {
@@ -202,9 +212,25 @@ footer img {
     width: 100%;
 }
 
+.linkMenu{
+    color: var(--yellow);
+}
+
 ul li p,
 ul li a {
     margin: 8px;
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+li a:hover {
+    font-size: 1.2rem;
+    transition: 100ms;
+    font-weight: bold;
 }
 
 
@@ -278,6 +304,7 @@ iframe {
     align-items: center;
     justify-content: center;
     flex-direction: column-reverse;
+    padding: 0 1rem;
 }
 
 .pageInformation h3 {
