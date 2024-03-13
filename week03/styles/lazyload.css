@@ -1,0 +1,62 @@
+footer{
+    background-color: #071B30;
+    color: var(--yellow);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 10rem;
+    justify-content: space-around;
+    color: whitesmoke;
+
+}
+
+footer .flag{
+    display: flex;
+    flex-direction: row;
+}
+
+footer .currentYearDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+footer .flag p:first-child{
+    margin-right: 1rem;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.images{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.images img{
+    margin: 2rem;
+    border-radius: 3rem;
+}
+
+.images img {
+    animation: fadeIn 15s;
+    background: #000;
+}

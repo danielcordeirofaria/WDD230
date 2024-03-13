@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/lazyload.css">
+
+    <title>Lazy loading</title>
+</head>
+
+<body>
+    <header>
+        <h1>Lazy loading</h1>
+        <ul>
+            <li><a href="#">Image 1</a></li>
+            <li><a href="#">Image 2</a></li>
+            <li><a href="#">Image 3</a></li>
+            <li><a href="#">Image 4</a></li>
+            <li><a href="#">Image 5</a></li>
+            <li><a href="#">Image 6</a></li>
+
+        </ul>
+    </header>
+    <main>
+        <section class="images">
+            <picture><img id="image1" src="images/image 1.webp" alt="image 1" loading="lazy" width="400" height="600"></picture>
+            <picture><img id="image2" src="images/image 2.webp" alt="image 2" loading="lazy" width="400" height="600"></picture>
+            <picture><img id="image3" src="images/image 3.webp" alt="image 3" loading="lazy" width="400" height="600"></picture>
+            <picture><img id="image4" src="images/image 4.webp" alt="image 4" loading="lazy" width="400" height="600"></picture>
+            <picture><img id="image5" src="images/image 5.webp" alt="image 5" loading="lazy" width="400" height="600"></picture>
+            <picture><img id="image6" src="images/image 6.webp" alt="image 6" loading="lazy" width="400" height="600"></picture>
+        </section>
+    </main>
+    <footer>
+        <div class="currentYearDiv">
+            <p>&copy;</p>
+            <p class="currentYear"></p>
+
+        </div>
+        <p>Daniel Faria</p>
+        <div class="flag">
+            <p>Brazil</p>
+            <img src="images/brasil.webp" alt="brazil flag">
+        </div>
+
+        <p class="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/rolling.js"></script>
+
+</body>
+
+</html>

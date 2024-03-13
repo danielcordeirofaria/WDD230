@@ -15,7 +15,7 @@
     <meta property="og:title" content="Daniel Faria - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:description" content="web page that show the works did from class">
-    <meta property="og:image" content="https://danielcordeirofaria.github.io/wdd230/images/photodaniel.jpg">
+    <meta property="og:image" content="https://danielcordeirofaria.github.io/wdd230/images/photodaniel.webp">
     <meta property="og:url" content="https://danielcordeirofaria.github.io/wdd230/">
 
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
@@ -42,6 +42,17 @@
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/São-Paulo-Brazil-Temple-mobile-small.webp" media="(max-width: 200px)">
+                <source srcset="images/São-Paulo-Brazil-Temple-mobile.webp" media="(max-width: 400px)">
+                <img src="images/São-Paulo-Brazil-Temple-large.webp" alt="Photo of temple of são Paulo, Brazil">
+            </picture>
+            <div class="herolabel">
+                <p>São Paulo Temple</p>
+            </div>
+
+        </div>
         <h1>WDD 230: Web Frontend Development</h1>
         <div class="card-container">
             <section class="card learningCard">
@@ -55,11 +66,12 @@
                     <li>
                         <h3>Week 02: <h3><a href="week02/design.html">Design page</a>
                         <h3> | <h3><a href="https://codepen.io/danielcordeirofaria/pen/bGJdBRo">Responsive Menu using'Humburger'</a>
-                        <h3> | <h3><a href="week02/bom.html">Favorite Book of Mormon chapters list</a>
+                        <h3> | <h3><a href="week02/bom.html">Favorite BOM chapters list</a>
                     </li>
                     <li>
-                        <h3>Week 03: <h3><a href="#"></a>
-                        <h3> | <h3><a href="#"></a>
+                        <h3>Week 03: <h3><a href="week03/image/landscape.webp">WebP</a>
+                        <h3> | <h3><a href="week03/lazyload.html">Lazy Load Page</a>
+                        <h3> | <h3><a href="week03/bom.html">Favorite BOM chapters list with local storage</a>
                     </li>
                     <li>
                         <h3>Week 04: <h3><a href="#"></a>
@@ -88,6 +100,12 @@
             </section>
         </div>
     </main>
+    <div class="mapDiv">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.29459143276!2d-49.31293342459912!3d-25.495219935475514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce330f4f9ceff%3A0x58d890bca3485a6c!2sR.%20Gen.%20Potiguara%2C%20487%20-%20Novo%20Mundo%2C%20Curitiba%20-%20PR%2C%2081050-500!5e0!3m2!1spt-BR!2sbr!4v1696535153863!5m2!1spt-BR!2sbr"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            class=""></iframe>
+    </div>
     <footer>
         <div class="yearNameFlag">
             <div class="currentYearDiv">
