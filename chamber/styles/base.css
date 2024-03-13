@@ -466,9 +466,10 @@ footer {
   width: 100%;
 }
 
-/* .allMainContent picture img {
-  width: 100%;
-} */
+.allMainContent picture img {
+  max-width: 100%;
+  height: auto;
+}
 
 .population {
   grid-row: 1/2;
