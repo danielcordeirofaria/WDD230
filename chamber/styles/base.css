@@ -306,6 +306,7 @@ footer {
   background-color: var(--darkBlue);
   color: var(--llGren);
   padding: 2rem;
+  margin-top: 1rem;
 }
 
 .footerLogo img {
@@ -578,4 +579,9 @@ footer {
   margin-top: 1rem;
 }
 
+.captions{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
 
