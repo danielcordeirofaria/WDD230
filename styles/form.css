@@ -1,0 +1,107 @@
+:root {
+  --blue: #071b30;
+  --yellow: #f9b500;
+  --red: #8e1c04;
+
+  /* change the values below to your chosen font(s) */
+  --text-font: "Love Ya Like A Sister", cursive;
+}
+
+html{
+  width: auto
+}
+
+main {
+  padding: 2rem;
+}
+
+ /* header {
+  background: var(--red);
+  color: var(--yellow);
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  flex-direction: column;
+} */
+
+
+input[name="confirm_password"].notEqual {
+  border: 2px solid red;
+}
+
+#password1.notEqual,
+#password2.notEqual {
+  border: 2px solid red;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  font-weight: 800;
+  color: var(--blue);
+  border-radius: 10px;
+}
+
+label.top,
+.rClass,
+#rangevalue,
+.submitBtn {
+  margin-top: 1rem;
+  font-weight: 800;
+  color: var(--blue);
+}
+
+label.top{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input {
+  border-radius: 10px;
+  height: 44px;
+  color: var(--blue);
+  margin-top: .25rem;
+}
+
+input:invalid{
+  background-color: var(--red);
+  text-indent: 0.5rem;
+}
+
+input:focus{
+  background-color: var(--blue);
+  border: var(--blue);
+  color: var(--yellow);
+  text-indent: 0.5rem;
+}
+
+input:invalid:required{
+  border: var(--red) solid 6px;
+}
+
+input:required:valid{
+  border-radius: 10px;
+  height: 44px;
+  border: var(--blue) solid 4px;
+  background-color: #071b30;
+  color: var(--yellow);
+  margin-top: .25rem;
+  text-indent: 0.5rem;
+
+}
+
+input[type="email"]:invalid{
+  background-color: var(--red);
+  border: var(--red) solid 6px;
+
+}
+
+.submitBtn {
+  background-color: var(--red);
+  border: none;
+  padding: 0.75rem;
+  border-radius: 10px;
+  color: var(--yellow);
+
+}
