@@ -1,0 +1,31 @@
+main{
+    display: flex;
+    justify-content: center;
+}
+
+thead th{
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    border: 1px solid   #18171774;
+
+}
+
+tbody th{
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: 1px solid   #eeeeeede;
+
+}
+
+.clumnTitle{
+    background-color: #333333;
+}
+
+tbody tr:nth-child(2){
+    background-color: #eeeeee;
+}
+
