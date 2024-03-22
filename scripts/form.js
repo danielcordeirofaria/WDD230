@@ -32,20 +32,22 @@ function displayRatingValue() {
 
 const emailField = document.getElementById('email');
 
-emailField.addEventListener('blur', function() {
-  if (!emailField.validity.valid) {
+emailField.addEventListener('input', function() {
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@byui\.edu$/;
+  const isEmailValid = emailRegex.test(emailField.value);
+  
+  if (!isEmailValid) {
     emailField.setCustomValidity("Please enter a valid email address with the '@byui.edu' domain.");
   } else {
     emailField.setCustomValidity('');
   }
 });
 
+
 function validateForm() {
   const isPasswordValid = checkinPassword();
   const isEmailValid = emailField.checkValidity();
-  if (!isEmailValid) {
-      emailField.reportValidity();
-      return false;
-  }
+
   return isPasswordValid && isEmailValid;
 }
+
