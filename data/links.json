@@ -1,0 +1,89 @@
+{
+    "weeks": [
+        {
+            "week": "Week 01",
+            "links": [
+                {
+                    "url": "week01/chamber-site-plan.html",
+                    "title": "Planning chamber website"
+                },
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "Holygrail"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "Media Query"
+                }
+            ]
+        },
+        {
+            "week": "Week 02",
+            "links": [
+                {
+                    "url": "week02/design.html",
+                    "title": "Design page"
+                },
+                {
+                    "url": "https://codepen.io/danielcordeirofaria/pen/bGJdBRo",
+                    "title": "Responsive Menu using'Humburger'"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "Favorite BOM chapters list"
+                }
+            ]
+        },
+        {
+            "week": "Week 03",
+            "links": [
+                {
+                    "url": "week03/image/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Lazy Load Page"
+                },
+                {
+                    "url": "week03/bom.html",
+                    "title": "Favorite BOM chapters list with local storage"
+                }
+            ]
+        },
+        {
+            "week": "Week 04",
+            "links": [
+                {
+                    "url": "https://codepen.io/danielcordeirofaria/pen/YzMZEQa",
+                    "title": "Pseudo-class Fun"
+                },
+                {
+                    "url": "week04/image/cssCombinatorsImage.png",
+                    "title": "CSS Combinators image"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "Building table"
+                }
+            ]
+        },
+        {
+            "week": "Week 05",
+            "links": [
+                {
+                    "url": "https://codepen.io/danielcordeirofaria/pen/zYXdzGX",
+                    "title": "Pseudo-element Examples"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "JSON file"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "Prophets page"
+                }
+            ]
+        }
+    ]
+}

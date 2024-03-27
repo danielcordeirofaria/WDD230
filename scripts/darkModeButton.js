@@ -1,6 +1,6 @@
 const modeButton = document.querySelector("#mode");
 const pageInformation = document.querySelector('.pageInformation')
-const lessonList = document.querySelector('.lessonList')
+let lessonList = document.querySelector('.lessonList')
 const main = document.querySelector("main");
 
 modeButton.addEventListener("click", () => {
