@@ -108,10 +108,21 @@ document.addEventListener('DOMContentLoaded', function () {
             const lat = position.coords.latitude;
             const long = position.coords.longitude;
             apiFetch(lat, long);
+        }, function (error) {
+            if (error.code === error.PERMISSION_DENIED) {
+                alert("You denied the geo-location request. The weather that will be rendered will be the default location.");
+                const lat = -25.49;
+                const long = -49.34;
+                apiFetch(lat, long);
+            } else {
+                alert("An error occurred while trying to get your location.");
+            }
         });
     } else {
-        alert("You didn't turn on the geo-location. The weather that will be rendered will be the place of the developer.");
+        alert("Geolocation is not supported by this browser. The weather that will be rendered will be the default location.");
         const lat = -25.49;
         const long = -49.34;
+        apiFetch(lat, long);
     }
 });
+
