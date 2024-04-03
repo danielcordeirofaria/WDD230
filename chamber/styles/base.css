@@ -189,7 +189,6 @@ nav ul {
   padding: 1rem;
   margin: 1rem;
   box-shadow: 0 0 16px var(--lightGreen);
-  height: 14rem;
   color: var(--almostBlack);
   font-size: 24px;
   /* padding-bottom: 0.5rem; */
@@ -204,23 +203,39 @@ nav ul {
 }
 
 .weatherCard {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-items: center;
 }
 
 .weatherCard h2 {
-  grid-column: 1/3;
-  grid-row: 1/2;
   text-align: center;
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+  border-bottom: solid var(--green) 1px;
+  padding-bottom: 0.5rem;
+  width: 90%;
 }
 
 .weatherCard img {
-  grid-row: 2/4;
-  grid-column: 1/2;
+  grid-row: 2 / 4;
+  grid-column: 1 / 2;
+}
+
+.climateToday{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
   align-items: center;
+  border-bottom: solid var(--green) 1px;
+  width: 90%;
+}
+
+.climateToday h2{
+  grid-column: 1/3;
+  grid-row: 1/2;
+  width: 100%;
 }
 
 .temperature {
@@ -234,15 +249,7 @@ nav ul {
   display: flex;
 }
 
-.humidity {
-  grid-column: 1/2;
-  grid-row: 4/5;
-}
 
-.humidityNumber {
-  grid-column: 2/3;
-  grid-row: 4/5;
-}
 
 .windChill {
   grid-column: 1/2;
@@ -262,6 +269,25 @@ nav ul {
   height: 12rem;
 }
 
+.forecastTomorrow, .forecastNextDay{
+  border-bottom: solid var(--green) 1px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 0 0 0.5rem 0 ;
+  margin: 0 0 0.5rem 0 ;
+}
+
+.forecastTomorrow > * , .forecastNextDay > *{
+  padding-top: 10px; /* Adicione o espaçamento vertical entre as linhas */
+}
+
+.dataTomorrow, .dataNextDay{
+  grid-row: 1/3;
+}
 /* color: var(--almostBlack); */
 
 .memberSpotlights {
