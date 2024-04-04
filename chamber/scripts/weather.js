@@ -5,7 +5,7 @@ const key = "3fd567ec38f593abe6ddc29dd6159dcd";
 
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial&appid=${key}`;
 
-const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=-25.495342&lon=-49.311614&units=imperial&appid=3fd567ec38f593abe6ddc29dd6159dcd`
+const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&units=imperial&appid=3fd567ec38f593abe6ddc29dd6159dcd`
 
 async function apiFetch() {
     try {
@@ -59,30 +59,24 @@ function capitalizeFirstLetter(string) {
 
 
 function calculateForecast(data) {
-    // Obter a data de amanhã e do próximo dia
     let tomorrow = new Date();
     tomorrow.setDate(tomorrow.getDate() + 1);
 
     let nextDay = new Date();
     nextDay.setDate(nextDay.getDate() + 2);
 
-    // Formatar as datas para o formato YYYY-MM-DD
     let tomorrowFormatted = tomorrow.toISOString().split('T')[0];
     let nextDayFormatted = nextDay.toISOString().split('T')[0];
 
-    // Filtrar os itens da lista que têm as datas de amanhã e do próximo dia
     let tomorrowItems = data.list.filter(item => item.dt_txt.includes(tomorrowFormatted));
     let nextDayItems = data.list.filter(item => item.dt_txt.includes(nextDayFormatted));
 
-    // Encontrar a menor e a maior temperatura de amanhã
     let minTemperatureTomorrow = Math.min(...tomorrowItems.map(item => item.main.temp_min));
     let maxTemperatureTomorrow = Math.max(...tomorrowItems.map(item => item.main.temp_max));
 
-    // Encontrar a menor e a maior temperatura do próximo dia
     let minTemperatureNextDay = Math.min(...nextDayItems.map(item => item.main.temp_min));
     let maxTemperatureNextDay = Math.max(...nextDayItems.map(item => item.main.temp_max));
 
-    // Acessar os elementos do DOM
     const dataTomorrow = document.querySelector('.dataTomorrow');
     const minTempTomorrow = document.querySelector('.minTempTomorrow');
     const maxTempTomorrow = document.querySelector('.maxTempTomorrow');
@@ -107,11 +101,10 @@ function calculateForecast(data) {
     let minTempTomorrowformatted = `Min. Temp.: ${minTemperatureTomorrow}&deg;F`
     let maxTemperatureTomorrowFormatted = `Max. Temp.:  ${maxTemperatureTomorrow}&deg;F`
 
-    let minTemperatureNextDayformatted = `Min. Temp.: ${minTemperatureTomorrow}&deg;F`
-    let maxTemperatureNextDayFormatted = `Max. Temp.:  ${maxTemperatureTomorrow}&deg;F`
+    let minTemperatureNextDayformatted = `Min. Temp.: ${minTemperatureNextDay}&deg;F`
+    let maxTemperatureNextDayFormatted = `Max. Temp.:  ${maxTemperatureNextDay}&deg;F`
 
 
-    // Definir o conteúdo dos elementos HTML
     dataTomorrow.innerHTML = tomorrowFormattedNewMode;
     minTempTomorrow.innerHTML = minTempTomorrowformatted;
     maxTempTomorrow.innerHTML = maxTemperatureTomorrowFormatted;

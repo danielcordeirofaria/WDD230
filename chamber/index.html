@@ -49,9 +49,6 @@
         <section class="joinUs" id="joinUs">
             <div class="heroImageDiv">
                 <picture>
-                    <!-- <source srcset="images/cic-small.webp" media="(max-width: 440px)">
-                    <source srcset="images/cic-medium.webp" media="(max-width: 750px)">
-                    <img src="images/cic.webp" alt="photo of an industry" class="heroImage"> -->
                     <source srcset="images/wdd230-org-small.webp" media="(max-width: 440px)">
                     <source srcset="images/wdd230-org-medium.webp" media="(max-width: 750px)">
                     <img src="images/wdd230-org-large.webp" alt="photo of an industry" class="heroImage">
@@ -60,7 +57,7 @@
             <h2 id="joinUsH2"><a href="join.html" class="joinUsLink">Join us</a></h2>
         </section>
         <div class="cards">
-            <section class="events">
+            <!-- <section class="events">
                 <div class="event">
                     <h2 class="eventH2">Events</h2>
                     <p class="eventTitle">The use of software for business management</p>
@@ -68,7 +65,19 @@
                     <p class="eventData">Wednesday at 10:00 a.m.</p>
                     <p class="eventLocal">Local: ICC Chamber thirst</p>
                 </div>
-            </section>
+            </section> -->
+            
+            <div id="weekly-event-banner" class="overlay">
+                <div class="events">
+                    <span class="close-btn">&times;</span>
+                    <h2 class="eventH2">Events</h2>
+                    <p class="eventTitle">The use of software for business management</p>
+                    <p class="eventSpeaker">Speaker: Daniel Faria</p>
+                    <p class="eventData">Wednesday at 10:00 a.m.</p>
+                    <p class="eventLocal">Local: ICC Chamber thirst</p>
+                </div>
+            </div>
+
             <section class="weatherCard">
                 <h2>Weather</h2>
                 <div class="climateToday">
@@ -135,6 +144,7 @@
     <script src="scripts/members-random.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/eventBanner.js"></script>
 
 </body>
 

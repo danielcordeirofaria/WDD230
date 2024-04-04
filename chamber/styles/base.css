@@ -104,7 +104,7 @@ nav ul {
 .navigation li {
   display: none;
   width: 100%;
-  transition: 0.5s;
+  transition: 0.25s;
 }
 
 .navigation a {
@@ -112,7 +112,7 @@ nav ul {
   text-align: center;
   text-decoration: none;
   font-weight: 700;
-  transition: 0.5s;
+  transition: 0.25s;
   /* font-size: clamp(1rem, 2vmin, 1.5rem); */
   font-size: 1rem;
   color: inherit; /* Isso faz com que os links visitados herdem a cor do elemento pai (normalmente, a cor do texto do body) */
@@ -161,6 +161,36 @@ nav ul {
   transition: background-color 0.3s, color 0.3s;
 }
 
+
+/*Banner event*/
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+/* .banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+} */
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 .eventH2 {
   /* font-weight: bold; */
   font-size: 24px;
@@ -196,9 +226,13 @@ nav ul {
 }
 
 .events{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--almostBlack);
+  width: 70%;
+  background-color: var(--llGren);
 
 }
 
